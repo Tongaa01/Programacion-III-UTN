@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haciendo la programeishon</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#titulos">Ir a la primer sección</a></li>
+            <li><a href="#texto">Ir a la segunda sección</a></li>
+            <li><a href="#links">Ir a la tercer sección</a></li>
+            <li><a href="#multimedia">Ir a la cuarta sección</a></li>
+            <li><a href="#tablas">Ir a la quinta sección</a></li>
+            <li><a href="#formularios">Ir a la sexta sección</a></li>
+            <li>Cosa aparte: <a href="https://www.youtube.com/watch?v=wWoQ7PFSYlk" target="_blank">Temón</a></li>
+        </ul>
+    </nav>
+    <article>
+        <section id="titulos">
+            <h1> Seccion 1: Titulos y estilos</h1>
+            <h2 style="font-style: italic;">Esto no está en negrita</h2>
+            <h3 style="color: blueviolet;">Esto no está en itálico</h3>
+            <h4 style="background-color: lightgreen; text-decoration:line-through;">Esto no está en h2</h4>
+            <h5 style="color: aqua; background-color: brown;">Esto no está tachado</h5>
+            <h6 style="background: #ffe7e8; border: 2px solid #e66465; font-style: oblique; text-decoration: underline;">Esto no está en h1</h6>
+        </section>
+        <section id="texto">
+            <h2>Seccion 2: Texto y subdivision</h2>
+            <section>
+                <h3>Subseccion 1</h3>
+                <p>Probando, 1, 2, 3, 4</p>
+            </section>
+            <section>
+                <h3>Subseccion 2</h3>
+                <p>Probando, Si, No, Si, No</p>
+            </section>
+        </section>
+        <section id="links">
+            <h2>Seccion 3: Listas y links</h2>
+            <section>
+                <ul> <!--Es el "mismo" que el nav, como no sabia si tenía que repetirlo, lo puse de nuevo por las dudas-->
+                    <li><a href="#titulos">Ir a la primer sección</a></li>
+                    <li><a href="#titulos">Ir a la primer sección</a></li>
+                    <li><a href="#links">Ir a la tercer sección</a></li>
+                    <li><a href="#multimedia">Ir a la cuarta sección</a></li>
+                    <li><a href="#tablas">Ir a la quinta sección</a></li>
+                    <li><a href="#formularios">Ir a la sexta sección</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=wWoQ7PFSYlk" target="_blank">Temón</a></li>
+                    <a href="https://www.youtube.com/watch?v=z34enKCqRGk" style="color: white;">Ir al easter egg</a>
+                </ul>
+                
+            </section>
+            <section>
+                <h3 style="font-style: italic;">Lista ordenada</h3>
+                <ol>
+                    <li>Primer item</li>
+                    <li>No el 4to item</li>
+                    <li>Tampoco el 4to item</li>
+                    <li>Este si es el 4to</li>
+                </ol>
+            </section>
+            <section>
+                <h3 style="font-style: italic;">Lista desordenada</h3>
+                <ul>
+                    <li>Alex Beachum</li>
+                    <li>Logan ver Hoef</li>
+                    <li>Wesley Martin</li>
+                    <li>Andrew Prahlow</li>
+                </ul>
+            </section>
+        </section>
+        <section id="multimedia">
+            <h2>Seccion 4: Multimedia</h2>
+            <p>Imagen:</p>
+            <img src="ee01.jpg" alt="iykyk" width="480" height="270">
+            <p>Video:</p>
+            <video src="freya.mp4" alt="mi gatita freya" controls width="239" height="425"></video>
+            <p>Audio:</p>
+            <audio src="Plan 4 - Jamas Tendras Mi Gloria.mp3" alt="Plan 4 - Jamas Tendras Mi Gloria" controls></audio>
+        </section>
+        <section id="tablas">
+            <h2>Seccion 5: Tablas</h2>
+            <table border="20">
+                <thead>
+                    <tr>
+                        <th>Columna uan</th>
+                        <th>Columna chu</th>
+                        <th>Columna tri</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>contenido uan</td>
+                        <td>contenido chu</td>
+                        <td>contenido tri</td>
+                    </tr>
+                    <tr>
+                        <td>contenido fourr</td>
+                        <td>contenido faiv</td>
+                        <td>contenido siks</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="formularios">
+            <h2>Seccion 6: Formularios</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" pattern="[A-Za-z\s]{2,}" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea name="message" id="message" required></textarea>
+                <button type="submit">Robar informacion del ordenador y enviar</button>
+            </form>
+        </section>
+    </article>
+    
+    <footer><p>TP 1 HTML hecho por el Tonga B)</p></footer>
+</body>
+</html>
